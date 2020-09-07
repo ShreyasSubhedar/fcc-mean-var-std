@@ -15,32 +15,32 @@ def calculate(list):
         "mean": [
             ds.mean(axis=0).tolist(),
             ds.mean(axis=1).tolist(),
-            ds.flatten().mean(axis=0)
+            ds.mean()
         ],
         "variance": [
             ds.var(axis=0).tolist(),
             ds.var(axis=1).tolist(),
-            ds.flatten().var(axis=0)
+            ds.var()
         ],
         "standard deviation": [
             ds.std(axis=0).tolist(),
             ds.std(axis=1).tolist(),
-            ds.flatten().std(axis=0)
+            ds.std()
         ],
         "max": [
             ds.max(axis=0).tolist(),
             ds.max(axis=1).tolist(),
-            ds.flatten().max(axis=0)
+            ds.max()
         ],
         "min": [
             ds.min(axis=0).tolist(),
             ds.min(axis=1).tolist(),
-            ds.flatten().min(axis=0)
+            ds.min()
         ],
         "sum": [
             ds.sum(axis=0).tolist(),
             ds.sum(axis=1).tolist(),
-            ds.flatten().sum(axis=0)
+            ds.sum()
         ],
     }
 
